@@ -1,0 +1,18 @@
+nome = input("Digite o nome do corretor: ")
+venda = float(input("Digite o valor da venda: R$ "))
+
+if venda <= 500000:
+    percentual = 0.06
+elif venda <= 700000:
+    percentual = 0.085
+elif venda <= 1000000:
+    percentual = 0.10
+else:
+    percentual = 0.12
+
+comissao = venda * percentual
+
+print("\n--- RELATÓRIO ---")
+print("Nome:", nome)
+print(f"Valor da venda: R$ {venda:.2f}")
+print(f"Comissão: R$ {comissao:.2f}")
